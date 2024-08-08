@@ -8,12 +8,12 @@ spec:
   goTemplateOptions: ["missingkey=error"]
   generators:
     - git:
-        repoURL: https://github.com/TODO/TODO # TODO put your own repo url here
+        repoURL: https://github.com/jakepage91/gitops-post # TODO put your own repo url here
         revision: HEAD
         directories:
           - path: 'packages/*'
     - git:
-        repoURL: https://github.com/TODO/TODO # TODO put your own repo url here
+        repoURL: https://github.com/jakepage91/gitops-post # TODO put your own repo url here
         revision: HEAD
         directories:
           - path: 'apps/*'
@@ -23,7 +23,7 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/TODO/TODO # TODO put your own repo url here
+        repoURL: https://github.com/jakepage91/gitops-post # TODO put your own repo url here
         targetRevision: HEAD
         path: '{{.path.path}}'
       destination:
